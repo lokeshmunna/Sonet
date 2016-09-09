@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Yellowtail-Regular.ttf">
+            <string>Yellowtail</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--LaunchVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="LaunchVC" customModule="Sonet" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BG3x" translatesAutoresizingMaskIntoConstraints="NO" id="3oV-Vd-t1G">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AppName3" translatesAutoresizingMaskIntoConstraints="NO" id="FMi-ic-kuW">
+                                <rect key="frame" x="20" y="53" width="560" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="560" id="6pR-il-LBy"/>
+                                    <constraint firstAttribute="height" constant="150" id="a8n-W8-bXT"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Globe.3x" translatesAutoresizingMaskIntoConstraints="NO" id="LjK-YU-jvP">
+                                <rect key="frame" x="265" y="211" width="65" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="SFq-IH-n5o"/>
+                                    <constraint firstAttribute="width" constant="65" id="yhZ-6e-ZFM"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Connecting WIth People" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1pB-aa-N8N">
+                                <rect key="frame" x="200" y="284" width="200" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="wC9-sE-qex"/>
+                                    <constraint firstAttribute="height" constant="20" id="wzt-Gd-b9Q"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Yellowtail" family="Yellowtail" pointSize="20"/>
+                                <color key="textColor" red="0.96470588239999999" green="0.89411764709999997" blue="0.094117647060000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vGg-e6-glz">
+                                <rect key="frame" x="185" y="388" width="230" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="230" id="EDt-nY-mIP"/>
+                                    <constraint firstAttribute="height" constant="45" id="woz-yf-Haz"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="login.3x"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jcd-28-GkS">
+                                <rect key="frame" x="185" y="451" width="230" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="4eX-9S-XQm"/>
+                                    <constraint firstAttribute="width" constant="230" id="wkM-fe-sKD"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="fb.3x"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="3oV-Vd-t1G" secondAttribute="trailing" id="4BG-Jh-Rgo"/>
+                            <constraint firstItem="FMi-ic-kuW" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="33" id="7Sm-W3-JNK"/>
+                            <constraint firstItem="3oV-Vd-t1G" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="HYR-xi-dv4"/>
+                            <constraint firstItem="3oV-Vd-t1G" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="TOQ-x9-ac7"/>
+                            <constraint firstItem="jcd-28-GkS" firstAttribute="top" secondItem="vGg-e6-glz" secondAttribute="bottom" constant="18" id="V8G-1R-n0N"/>
+                            <constraint firstItem="FMi-ic-kuW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="V9d-pb-mb6"/>
+                            <constraint firstItem="LjK-YU-jvP" firstAttribute="top" secondItem="FMi-ic-kuW" secondAttribute="bottom" constant="8" id="Vr6-zX-4hg"/>
+                            <constraint firstItem="vGg-e6-glz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="e6w-sT-MvZ"/>
+                            <constraint firstItem="FMi-ic-kuW" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="eIN-b3-8No"/>
+                            <constraint firstItem="jcd-28-GkS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="j4l-Es-EqM"/>
+                            <constraint firstItem="1pB-aa-N8N" firstAttribute="top" secondItem="LjK-YU-jvP" secondAttribute="bottom" constant="8" id="nmp-h6-hXv"/>
+                            <constraint firstItem="1pB-aa-N8N" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rzp-2x-xVA"/>
+                            <constraint firstItem="FMi-ic-kuW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rzt-87-WoS"/>
+                            <constraint firstItem="LjK-YU-jvP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-2.5" id="vwX-s6-KuM"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="3oV-Vd-t1G" secondAttribute="bottom" id="y9n-JU-Z3h"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="jcd-28-GkS" secondAttribute="bottom" constant="104" id="zOP-EH-Nbb"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="285" y="146"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="AppName3" width="522" height="126"/>
+        <image name="BG3x" width="1056" height="1851"/>
+        <image name="Globe.3x" width="285" height="285"/>
+        <image name="fb.3x" width="801" height="150"/>
+        <image name="login.3x" width="801" height="150"/>
+    </resources>
+</document>

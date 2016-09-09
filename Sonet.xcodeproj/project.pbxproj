@@ -1,0 +1,381 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1596F18E266E16533A8BF034 /* Pods_Sonet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18C174EF11F9C065EC370112 /* Pods_Sonet.framework */; };
+		A10C0AA41D82F280004EA03E /* Yellowtail-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A10C0AA31D82F280004EA03E /* Yellowtail-Regular.ttf */; };
+		A14323011D7FD1E500934209 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14323001D7FD1E500934209 /* AppDelegate.swift */; };
+		A14323031D7FD1E500934209 /* LaunchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14323021D7FD1E500934209 /* LaunchVC.swift */; };
+		A14323061D7FD1E500934209 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A14323041D7FD1E500934209 /* Main.storyboard */; };
+		A14323081D7FD1E500934209 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A14323071D7FD1E500934209 /* Assets.xcassets */; };
+		A143230B1D7FD1E500934209 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A14323091D7FD1E500934209 /* LaunchScreen.storyboard */; };
+		A14323131D7FD20E00934209 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A14323121D7FD20E00934209 /* GoogleService-Info.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		18C174EF11F9C065EC370112 /* Pods_Sonet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sonet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		805D7A36C7D85394B402AA3C /* Pods-Sonet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sonet.release.xcconfig"; path = "Pods/Target Support Files/Pods-Sonet/Pods-Sonet.release.xcconfig"; sourceTree = "<group>"; };
+		A10C0AA31D82F280004EA03E /* Yellowtail-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Yellowtail-Regular.ttf"; sourceTree = "<group>"; };
+		A14322FD1D7FD1E500934209 /* Sonet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sonet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A14323001D7FD1E500934209 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A14323021D7FD1E500934209 /* LaunchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchVC.swift; sourceTree = "<group>"; };
+		A14323051D7FD1E500934209 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A14323071D7FD1E500934209 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A143230A1D7FD1E500934209 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A143230C1D7FD1E500934209 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A14323121D7FD20E00934209 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F2CBF229FB31A1FF0DD725C7 /* Pods-Sonet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sonet.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Sonet/Pods-Sonet.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A14322FA1D7FD1E500934209 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1596F18E266E16533A8BF034 /* Pods_Sonet.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0DFF946EE217FF31EB341155 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F2CBF229FB31A1FF0DD725C7 /* Pods-Sonet.debug.xcconfig */,
+				805D7A36C7D85394B402AA3C /* Pods-Sonet.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A14322F41D7FD1E500934209 = {
+			isa = PBXGroup;
+			children = (
+				A14322FF1D7FD1E500934209 /* Sonet */,
+				A14322FE1D7FD1E500934209 /* Products */,
+				0DFF946EE217FF31EB341155 /* Pods */,
+				A99F37CCA2C1ED4279AD860A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A14322FE1D7FD1E500934209 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A14322FD1D7FD1E500934209 /* Sonet.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A14322FF1D7FD1E500934209 /* Sonet */ = {
+			isa = PBXGroup;
+			children = (
+				A14323001D7FD1E500934209 /* AppDelegate.swift */,
+				A14323021D7FD1E500934209 /* LaunchVC.swift */,
+				A14323041D7FD1E500934209 /* Main.storyboard */,
+				A14323071D7FD1E500934209 /* Assets.xcassets */,
+				A14323091D7FD1E500934209 /* LaunchScreen.storyboard */,
+				A143230C1D7FD1E500934209 /* Info.plist */,
+				A14323121D7FD20E00934209 /* GoogleService-Info.plist */,
+				A10C0AA31D82F280004EA03E /* Yellowtail-Regular.ttf */,
+			);
+			path = Sonet;
+			sourceTree = "<group>";
+		};
+		A99F37CCA2C1ED4279AD860A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				18C174EF11F9C065EC370112 /* Pods_Sonet.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A14322FC1D7FD1E500934209 /* Sonet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A143230F1D7FD1E500934209 /* Build configuration list for PBXNativeTarget "Sonet" */;
+			buildPhases = (
+				D7B834BC2427E3A7CEBDCF2A /* [CP] Check Pods Manifest.lock */,
+				A14322F91D7FD1E500934209 /* Sources */,
+				A14322FA1D7FD1E500934209 /* Frameworks */,
+				A14322FB1D7FD1E500934209 /* Resources */,
+				EC5B36C0B95D87C2B57C16A9 /* [CP] Embed Pods Frameworks */,
+				8BF6AB90466F651F7D43DEDA /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Sonet;
+			productName = Sonet;
+			productReference = A14322FD1D7FD1E500934209 /* Sonet.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A14322F51D7FD1E500934209 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = iSecurePayments;
+				TargetAttributes = {
+					A14322FC1D7FD1E500934209 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = A14322F81D7FD1E500934209 /* Build configuration list for PBXProject "Sonet" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A14322F41D7FD1E500934209;
+			productRefGroup = A14322FE1D7FD1E500934209 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A14322FC1D7FD1E500934209 /* Sonet */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A14322FB1D7FD1E500934209 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A143230B1D7FD1E500934209 /* LaunchScreen.storyboard in Resources */,
+				A14323131D7FD20E00934209 /* GoogleService-Info.plist in Resources */,
+				A14323081D7FD1E500934209 /* Assets.xcassets in Resources */,
+				A10C0AA41D82F280004EA03E /* Yellowtail-Regular.ttf in Resources */,
+				A14323061D7FD1E500934209 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8BF6AB90466F651F7D43DEDA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Sonet/Pods-Sonet-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D7B834BC2427E3A7CEBDCF2A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EC5B36C0B95D87C2B57C16A9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Sonet/Pods-Sonet-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A14322F91D7FD1E500934209 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A14323031D7FD1E500934209 /* LaunchVC.swift in Sources */,
+				A14323011D7FD1E500934209 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A14323041D7FD1E500934209 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A14323051D7FD1E500934209 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A14323091D7FD1E500934209 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A143230A1D7FD1E500934209 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A143230D1D7FD1E500934209 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A143230E1D7FD1E500934209 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A14323101D7FD1E500934209 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2CBF229FB31A1FF0DD725C7 /* Pods-Sonet.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Sonet/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.iSecurePayments.Sonet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A14323111D7FD1E500934209 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 805D7A36C7D85394B402AA3C /* Pods-Sonet.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Sonet/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.iSecurePayments.Sonet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A14322F81D7FD1E500934209 /* Build configuration list for PBXProject "Sonet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A143230D1D7FD1E500934209 /* Debug */,
+				A143230E1D7FD1E500934209 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A143230F1D7FD1E500934209 /* Build configuration list for PBXNativeTarget "Sonet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A14323101D7FD1E500934209 /* Debug */,
+				A14323111D7FD1E500934209 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A14322F51D7FD1E500934209 /* Project object */;
+}
