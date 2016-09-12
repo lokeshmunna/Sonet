@@ -61,7 +61,6 @@
                                 <state key="normal" backgroundImage="login.3x"/>
                                 <connections>
                                     <action selector="loginPageBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BPA-G2-Z7u"/>
-                                    <segue destination="Zqv-zI-iri" kind="presentation" identifier="loginVCid" id="mjQ-K3-aqQ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jcd-28-GkS">
@@ -100,12 +99,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="448" y="-182"/>
+            <point key="canvasLocation" x="23" y="-255"/>
         </scene>
         <!--LoginVC-->
         <scene sceneID="pTO-KY-7Oq">
             <objects>
-                <viewController id="Zqv-zI-iri" customClass="loginVC" customModule="Sonet" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="loginVC" id="Zqv-zI-iri" customClass="loginVC" customModule="Sonet" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="S3E-pb-JiS"/>
                         <viewControllerLayoutGuide type="bottom" id="kWn-ig-BvX"/>
@@ -145,7 +144,7 @@
                                     <constraint firstAttribute="width" constant="500" id="uYB-BC-dVb"/>
                                 </constraints>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="titleTextColour">
@@ -159,14 +158,14 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="T8E-qj-ypk" customClass="FloatLabelTextField" customModule="Sonet" customModuleProvider="target">
-                                <rect key="frame" x="50" y="295" width="500" height="40"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password(minimum 6 letters)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="T8E-qj-ypk" customClass="FloatLabelTextField" customModule="Sonet" customModuleProvider="target">
+                                <rect key="frame" x="50" y="305" width="500" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="500" id="Vbo-hG-793"/>
                                     <constraint firstAttribute="height" constant="40" id="r6F-8p-0TS"/>
                                 </constraints>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="titleActiveTextColour">
@@ -181,7 +180,7 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9kC-uO-jhg" customClass="button" customModule="Sonet" customModuleProvider="target">
-                                <rect key="frame" x="50" y="340" width="500" height="35"/>
+                                <rect key="frame" x="50" y="360" width="500" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="500" id="ahg-M0-OuV"/>
                                     <constraint firstAttribute="height" constant="35" id="m6g-P3-XkM"/>
@@ -190,9 +189,12 @@
                                 <state key="normal" title="Sign in">
                                     <color key="titleColor" red="0.96470588239999999" green="0.89411764709999997" blue="0.094117647060000004" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="emailSignBtn:" destination="Zqv-zI-iri" eventType="touchUpInside" id="Q9I-XC-osk"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cqL-BR-fsR">
-                                <rect key="frame" x="483" y="383" width="67" height="30"/>
+                                <rect key="frame" x="483" y="403" width="67" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="cEg-ma-pDI"/>
                                     <constraint firstAttribute="width" constant="67" id="ugv-pE-0Q0"/>
@@ -214,11 +216,11 @@
                             <constraint firstItem="9kC-uO-jhg" firstAttribute="leading" secondItem="ZOu-RZ-ap2" secondAttribute="leadingMargin" constant="30" id="OYH-nX-9rQ"/>
                             <constraint firstItem="Ueb-H6-pld" firstAttribute="centerX" secondItem="ZOu-RZ-ap2" secondAttribute="centerX" id="R4p-AE-Ks0"/>
                             <constraint firstItem="v3Z-QA-va3" firstAttribute="top" secondItem="ZOu-RZ-ap2" secondAttribute="top" id="SfD-FG-6oQ"/>
-                            <constraint firstItem="9kC-uO-jhg" firstAttribute="top" secondItem="T8E-qj-ypk" secondAttribute="bottom" constant="5" id="XuP-NG-rtT"/>
+                            <constraint firstItem="9kC-uO-jhg" firstAttribute="top" secondItem="T8E-qj-ypk" secondAttribute="bottom" constant="15" id="XuP-NG-rtT"/>
                             <constraint firstItem="T8E-qj-ypk" firstAttribute="trailing" secondItem="ZOu-RZ-ap2" secondAttribute="trailingMargin" constant="-30" id="bQC-Or-4Tq"/>
                             <constraint firstItem="Ueb-H6-pld" firstAttribute="top" secondItem="S3E-pb-JiS" secondAttribute="bottom" constant="50" id="bTI-Et-fxk"/>
                             <constraint firstItem="BR6-Hg-poo" firstAttribute="top" secondItem="Ueb-H6-pld" secondAttribute="bottom" constant="5" id="bhd-dw-UkO"/>
-                            <constraint firstItem="T8E-qj-ypk" firstAttribute="top" secondItem="Qwa-li-qxC" secondAttribute="bottom" id="bpc-t2-efP"/>
+                            <constraint firstItem="T8E-qj-ypk" firstAttribute="top" secondItem="Qwa-li-qxC" secondAttribute="bottom" constant="10" id="bpc-t2-efP"/>
                             <constraint firstItem="Qwa-li-qxC" firstAttribute="centerX" secondItem="ZOu-RZ-ap2" secondAttribute="centerX" id="cZE-dX-XJm"/>
                             <constraint firstItem="9kC-uO-jhg" firstAttribute="centerX" secondItem="ZOu-RZ-ap2" secondAttribute="centerX" id="d4p-oj-AIg"/>
                             <constraint firstItem="T8E-qj-ypk" firstAttribute="leading" secondItem="ZOu-RZ-ap2" secondAttribute="leadingMargin" constant="30" id="ffw-Pg-0Nm"/>
@@ -236,7 +238,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7oW-DQ-KaS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1204" y="-163"/>
+            <point key="canvasLocation" x="719" y="-255"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="PVU-UN-Vgb">
@@ -254,7 +256,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="exv-iO-WDj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-266" y="-163"/>
+            <point key="canvasLocation" x="-650" y="-255"/>
         </scene>
     </scenes>
     <resources>

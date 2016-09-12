@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class loginVC: UIViewController {
 
@@ -35,6 +36,89 @@ class loginVC: UIViewController {
     }
     
 
+    @IBAction func emailSignBtn(sender: AnyObject) {
+        
+        if let email = emailFld.text, let pwd = pwdFld.text {
+            
+            
+            FIRAuth.auth()?.signInWithEmail(email, password: pwd, completion: { (user, error) in
+                if error == nil {
+                    
+                    print("User Authentication with firebase")
+                } else if error != nil {
+                    
+                    
+                    let Signup = UIAlertController(title: "SIGN UP", message:"Your Email is unregisterd Click OK to SIGN UP", preferredStyle: UIAlertControllerStyle.Alert)
+                    
+                    Signup.addAction(UIAlertAction(title: "Cancel", style: .Default, handler: nil))
+                    
+                    self.presentViewController(Signup, animated: true, completion: nil)
+                    
+                    Signup.addAction(UIAlertAction(title: "OK", style: .Cancel, handler: { (action) in
+                        FIRAuth.auth()?.createUserWithEmail(email, password: pwd, completion: { (user, error) in
+                            if error != nil {
+                                
+                                let errorInSignup = UIAlertController(title: "Alert", message: "\(error!.localizedDescription)", preferredStyle: UIAlertControllerStyle.Alert)
+                                
+                                errorInSignup.addAction(UIAlertAction(title: "OK", style: .Cancel, handler: nil))
+                                
+                                self.presentViewController(errorInSignup, animated: true, completion: nil)
+                                
+                                print("Hey Unable to authenticating Firebase with email\(error)")
+                            } else {
+                                
+                                
+                                print("Sucessfully Authenticating with new mailID")
+                            }
+                        })
+                    }))
+                    
+                    
+                    
+                }
+                    
+                    
+                else {
+                    
+                    let credential = FIREmailPasswordAuthProvider.credentialWithEmail(email, password: pwd)
+                    [self.firebaseAuth(credential)]
+
+                   
+                }
+            })
+        }
+        
+    }
+    
+    
+    func firebaseAuth (_credintials: FIRAuthCredential) {
+        FIRAuth.auth()?.signInWithCredential(_credintials, completion: { (user, error) in
+            if error != nil {
+                
+                print("Unable to Authenticating the firebase - \(error)")
+
+                
+                let errorInSignin = UIAlertController(title: "Alert", message: "\(error!.localizedDescription)", preferredStyle: UIAlertControllerStyle.Alert)
+                
+                errorInSignin.addAction(UIAlertAction(title: "OK", style: .Cancel, handler: nil))
+                
+                self.presentViewController(errorInSignin, animated: true, completion: nil)
+                
+                
+                
+            } else {
+                
+                print("Sucessfully Authenticating the firebase")
+            }
+            
+            
+        })
+    }
+    
+    
+    
+    
+    
     /*
     // MARK: - Navigation
 

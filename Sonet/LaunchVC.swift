@@ -24,11 +24,8 @@ class LaunchVC: UIViewController {
    
     @IBAction func loginPageBtn(sender: AnyObject) {
         
-//      let loginView = self.storyboard?.instantiateViewControllerWithIdentifier("loginVCid") as? loginVC
-//        
-//        
-//        self.navigationController?.pushViewController(loginView!, animated: true)
-        
+    let login = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle()).instantiateViewControllerWithIdentifier("loginVC")
+        self.navigationController!.pushViewController(login, animated: true)
         
     }
     
