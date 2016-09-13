@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import SwiftKeychainWrapper
 
 class loginVC: UIViewController {
 
@@ -44,7 +45,12 @@ class loginVC: UIViewController {
             FIRAuth.auth()?.signInWithEmail(email, password: pwd, completion: { (user, error) in
                 if error == nil {
                     
-                    print("User Authentication with firebase")
+                    let saveSuccessful = KeychainWrapper.defaultKeychainWrapper().setString((user?.uid)!, forKey: KEY_UID)
+                    
+                    print("User Authentication with firebase\(saveSuccessful)")
+                    
+                    self.performSegueWithIdentifier("feedVCfromEmail", sender: nil)
+                    
                 } else if error != nil {
                     
                     
@@ -67,7 +73,12 @@ class loginVC: UIViewController {
                                 print("Hey Unable to authenticating Firebase with email\(error)")
                             } else {
                                 
+                                let Signup = UIAlertController(title: "Alert", message:"You succesfully registerd with your mailid please login", preferredStyle: UIAlertControllerStyle.Alert)
                                 
+                                Signup.addAction(UIAlertAction(title: "ok", style: .Default, handler: nil))
+                                
+                                self.presentViewController(Signup, animated: true, completion: nil)
+
                                 print("Sucessfully Authenticating with new mailID")
                             }
                         })
@@ -108,7 +119,9 @@ class loginVC: UIViewController {
                 
             } else {
                 
-                print("Sucessfully Authenticating the firebase")
+                let saveSuccessful = KeychainWrapper.defaultKeychainWrapper().setString((user?.uid)!, forKey: KEY_UID)
+                
+                print("Sucessfully Authenticating the firebase\(saveSuccessful)")
             }
             
             

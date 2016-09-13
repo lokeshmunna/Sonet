@@ -10,6 +10,8 @@ import UIKit
 import FBSDKCoreKit
 import FBSDKLoginKit
 import Firebase
+import SwiftKeychainWrapper
+
 
 class LaunchVC: UIViewController {
 
@@ -20,12 +22,21 @@ class LaunchVC: UIViewController {
         
         // Do any additional setup after loading the view, typically from a nib.
     }
+    
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(true)
+        
+        if let _ = KeychainWrapper.defaultKeychainWrapper().stringForKey(KEY_UID) {
+            performSegueWithIdentifier("feedVCfromFB", sender: nil)
+        }
+    }
 
    
     @IBAction func loginPageBtn(sender: AnyObject) {
         
-    let login = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle()).instantiateViewControllerWithIdentifier("loginVC")
-        self.navigationController!.pushViewController(login, animated: true)
+        performSegueWithIdentifier("loginVC", sender: nil)
+        
         
     }
     
@@ -65,7 +76,9 @@ class LaunchVC: UIViewController {
                 
             } else {
                 
-                print("Sucessfully Authenticating the firebase")
+ let saveSuccessful = KeychainWrapper.defaultKeychainWrapper().setString((user?.uid)!, forKey: KEY_UID)
+                
+                print("Sucessfully Authenticating the firebase with id\(saveSuccessful)")
             }
             
             

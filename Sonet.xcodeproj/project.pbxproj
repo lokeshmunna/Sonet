@@ -19,6 +19,8 @@
 		A14BE9EF1D8526CE0049FD26 /* loginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14BE9EE1D8526CE0049FD26 /* loginVC.swift */; };
 		A14BE9F31D8544520049FD26 /* FloatLabelTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14BE9F11D8544520049FD26 /* FloatLabelTextField.swift */; };
 		A14BE9F41D8544520049FD26 /* FloatLabelTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14BE9F21D8544520049FD26 /* FloatLabelTextView.swift */; };
+		A152B5451D8803490055874A /* feedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A152B5441D8803490055874A /* feedVC.swift */; };
+		A152B54A1D8808720055874A /* constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A152B5491D8808720055874A /* constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,8 @@
 		A14BE9EE1D8526CE0049FD26 /* loginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = loginVC.swift; sourceTree = "<group>"; };
 		A14BE9F11D8544520049FD26 /* FloatLabelTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatLabelTextField.swift; sourceTree = "<group>"; };
 		A14BE9F21D8544520049FD26 /* FloatLabelTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatLabelTextView.swift; sourceTree = "<group>"; };
+		A152B5441D8803490055874A /* feedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = feedVC.swift; sourceTree = "<group>"; };
+		A152B5491D8808720055874A /* constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = constants.swift; sourceTree = "<group>"; };
 		F2CBF229FB31A1FF0DD725C7 /* Pods-Sonet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sonet.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Sonet/Pods-Sonet.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -83,12 +87,11 @@
 		A14322FF1D7FD1E500934209 /* Sonet */ = {
 			isa = PBXGroup;
 			children = (
+				A152B5461D8807A20055874A /* Util */,
 				A14BE9E91D8521B80049FD26 /* Model */,
 				A14BE9EA1D8521C50049FD26 /* View */,
 				A14BE9EB1D8521DE0049FD26 /* Controller */,
 				A14323001D7FD1E500934209 /* AppDelegate.swift */,
-				A14323021D7FD1E500934209 /* LaunchVC.swift */,
-				A14BE9EE1D8526CE0049FD26 /* loginVC.swift */,
 				A14323041D7FD1E500934209 /* Main.storyboard */,
 				A14323071D7FD1E500934209 /* Assets.xcassets */,
 				A14323091D7FD1E500934209 /* LaunchScreen.storyboard */,
@@ -117,6 +120,9 @@
 		A14BE9EB1D8521DE0049FD26 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				A14323021D7FD1E500934209 /* LaunchVC.swift */,
+				A14BE9EE1D8526CE0049FD26 /* loginVC.swift */,
+				A152B5441D8803490055874A /* feedVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -128,6 +134,14 @@
 				A14BE9F21D8544520049FD26 /* FloatLabelTextView.swift */,
 			);
 			path = FloatLabelFields;
+			sourceTree = "<group>";
+		};
+		A152B5461D8807A20055874A /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				A152B5491D8808720055874A /* constants.swift */,
+			);
+			name = Util;
 			sourceTree = "<group>";
 		};
 		A99F37CCA2C1ED4279AD860A /* Frameworks */ = {
@@ -263,12 +277,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A152B5451D8803490055874A /* feedVC.swift in Sources */,
 				A14323031D7FD1E500934209 /* LaunchVC.swift in Sources */,
 				A14323011D7FD1E500934209 /* AppDelegate.swift in Sources */,
 				A14BE9EF1D8526CE0049FD26 /* loginVC.swift in Sources */,
 				A14BE9F41D8544520049FD26 /* FloatLabelTextView.swift in Sources */,
 				A14BE9F31D8544520049FD26 /* FloatLabelTextField.swift in Sources */,
 				A14BE9ED1D8523860049FD26 /* button.swift in Sources */,
+				A152B54A1D8808720055874A /* constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
