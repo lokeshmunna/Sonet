@@ -13,6 +13,12 @@ class feedVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+            if self.revealViewController() != nil {
+            open.target = self.revealViewController()
+            open.action = "revealToggle:"
+            self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+        }
 
         // Do any additional setup after loading the view.
     }
@@ -32,6 +38,9 @@ class feedVC: UIViewController {
         
     }
 
+    @IBOutlet var open: UIBarButtonItem!
+    @IBAction func open(sender: AnyObject) {
+    }
     /*
     // MARK: - Navigation
 

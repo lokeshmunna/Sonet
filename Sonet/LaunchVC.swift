@@ -23,7 +23,7 @@ class LaunchVC: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
     
-    
+
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(true)
         
@@ -59,6 +59,7 @@ class LaunchVC: UIViewController {
                 let credintials = FIRFacebookAuthProvider.credentialWithAccessToken(FBSDKAccessToken.currentAccessToken().tokenString)
                 
                 [self.firebaseAuth(credintials)]
+                
                 
             }
         }

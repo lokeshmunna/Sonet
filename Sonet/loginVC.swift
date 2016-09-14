@@ -51,20 +51,20 @@ class loginVC: UIViewController {
                     
                     self.performSegueWithIdentifier("feedVCfromEmail", sender: nil)
                     
-                } else if error != nil {
+                }
+                else if error != nil {
                     
+                    let Signup = UIAlertController(title: "Alert", message:"\(error!.localizedDescription)", preferredStyle: UIAlertControllerStyle.Alert)
                     
-                    let Signup = UIAlertController(title: "SIGN UP", message:"Your Email is unregisterd Click OK to SIGN UP", preferredStyle: UIAlertControllerStyle.Alert)
-                    
-                    Signup.addAction(UIAlertAction(title: "Cancel", style: .Default, handler: nil))
+                    Signup.addAction(UIAlertAction(title: "Correct password", style: .Default, handler: nil))
                     
                     self.presentViewController(Signup, animated: true, completion: nil)
                     
-                    Signup.addAction(UIAlertAction(title: "OK", style: .Cancel, handler: { (action) in
+                    Signup.addAction(UIAlertAction(title: "Sign Up", style: .Cancel, handler: { (action) in
                         FIRAuth.auth()?.createUserWithEmail(email, password: pwd, completion: { (user, error) in
                             if error != nil {
                                 
-                                let errorInSignup = UIAlertController(title: "Alert", message: "\(error!.localizedDescription)", preferredStyle: UIAlertControllerStyle.Alert)
+                                let errorInSignup = UIAlertController(title: "Alert", message: "\(error!.localizedDescription)and please check your password", preferredStyle: UIAlertControllerStyle.Alert)
                                 
                                 errorInSignup.addAction(UIAlertAction(title: "OK", style: .Cancel, handler: nil))
                                 
